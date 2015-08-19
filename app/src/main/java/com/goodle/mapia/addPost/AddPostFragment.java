@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.goodle.mapia.R;
+import com.goodle.mapia.home.HomeActivity;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
@@ -48,35 +49,16 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
                 txt_rect_size.setText("");
             }
         }
-        /*if (requestCode == LAUNCH_PlacePicker) {
-            if (resultCode == Activity.RESULT_OK) {
-                Place place = PlacePicker.getPlace(data, this.getActivity());
-                String toastMsg = String.format("Place: %s", place.getName());
-                Toast.makeText(this.getActivity(), toastMsg, Toast.LENGTH_LONG).show();
-                txt_center_loc.setText(place.getLatLng().latitude + "/" + place.getLatLng().longitude);
-                txt_rect_size.setText("");
-            }
-        }*/
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_place_picker:
-                /*PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
-
-                Context context = getActivity().getApplicationContext();
-                try {
-                    startActivityForResult(builder.build(context), LAUNCH_PlacePicker);
-                } catch (GooglePlayServicesRepairableException e) {
-                    e.printStackTrace();
-                } catch (GooglePlayServicesNotAvailableException e) {
-                    e.printStackTrace();
-                }*/
-
                 Intent intent = new Intent(this.getActivity(), LocationPicker.class);
                 Bundle bundle = new Bundle();
-                bundle.putParcelable("current_location", new LatLng(100,100));
+                bundle.putParcelable("current_location", HomeActivity.getCurrentLocation());
+                bundle.putFloat("current_zoom",16);
                 intent.putExtra("bundle",bundle);
                 startActivityForResult(intent,REQUEST_LOCATION_PICKER);
                 break;

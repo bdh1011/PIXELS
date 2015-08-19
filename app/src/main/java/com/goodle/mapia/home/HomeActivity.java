@@ -1,5 +1,9 @@
 package com.goodle.mapia.home;
 
+import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -13,10 +17,13 @@ import com.goodle.mapia.groupMap.GroupMapFragment;
 import com.goodle.mapia.myMap.MyMapFragment;
 import com.goodle.mapia.newsFeed.NewsFeedFragment;
 import com.goodle.mapia.R;
+import com.google.android.gms.maps.model.LatLng;
 
 
-public class HomeActivity extends FragmentActivity implements View.OnClickListener{
+public class HomeActivity extends FragmentActivity implements View.OnClickListener, LocationListener{
 
+    LocationManager locationManager;
+    static LatLng current_location;
     int currentFragmentIndex = 0;
     public final static int FragmentAddPost = 0;
     public final static int FragmentAlert = 1;
@@ -41,6 +48,11 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
         btn_news_feed.setOnClickListener(this);
 
         fragmentReplace(currentFragmentIndex);
+
+        current_location = new LatLng(0,0);
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
     }
 
     private void fragmentReplace(int newFragmentIndex){
@@ -97,5 +109,22 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
                 fragmentReplace(currentFragmentIndex);
                 break;
         }
+    }
+
+    public static LatLng getCurrentLocation(){
+        return current_location;
+    }
+    @Override
+    public void onLocationChanged(Location location) {
+        current_location = new LatLng(location.getLatitude(), location.getLongitude());
+    }
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+    }
+    @Override
+    public void onProviderEnabled(String provider) {
+    }
+    @Override
+    public void onProviderDisabled(String provider) {
     }
 }
