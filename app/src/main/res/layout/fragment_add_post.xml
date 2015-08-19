@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_place_picker"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Loc_X / Loc_Y"/>
+    <TextView
+        android:id="@+id/txt_center_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Width / Height"/>
+    <TextView
+        android:id="@+id/txt_rect_size"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+</LinearLayout>

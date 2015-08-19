@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-930d48cd35d943683cce9ab6686d45d444879289.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-1240e73ff86910276b61b1dacf85c726cf48fb3a.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-85a777d3daa8ab7d6cbca9ebfb8866838e4c2af2.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-d6c4ce39987654cd3342b797437b4b073c4fcd9b.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-34037248fbfe964202245b67badae8e26ebe76c1.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-731d4eabf1d1c715f3f9edd9f48e947413716ea7.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-466f56e541e9c6f7d1bd842d4d8cf42262ca83e2.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-825b32d68a820b86a9953eba8136e9253f832053.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-0ce8e2ea9f3ca126a0fcdb5d4b0b2593670c882d.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-9eaeb85c53f521d48f819c0fe1bcaa9433223382.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-ba7fd593d92fe09ce9f654615814841664d2c5f3.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-5dd6321a407ce7afaf02c84abd4959da9eb2adec.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-e2968a1e1e204376999959f52921947f0788a7d8.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-d243a920fb3cdeee878b4e67a05b65d1c657e7da.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-cd44501476d89c19e3adadd525246137e2e62fe3.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-8441a792e450e7d3499db07c844ddba65f872621.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-ec05715894c1c3a6ff84e3e513213d6cdad76d45.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-71643d66618fdd0cbc9b054fb53804ef4adc8fc3.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-847b77a395ab9a5e1114c2e911d648b6b5144654.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-2f8dae5566b6980c4e7d52b2a9fccf8070b80c48.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-ec211401c4ce5342b5586527e89b18c15fe56350.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-2c3c5998a3b9c209323d682810b7a259dc75d065.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-278bbe21bbc96eb0e8d1dde18ffca9f838c9e5c1.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-8d8eb19da9f406cd2058784e0067bbd06b2f1c82.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-46478de7e0eb8db3a10ae05eed610ef76b0ef150.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-4b62fe2aab6d8bf7db3ab78f2aeeb278b0c50d16.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-2e79235f8453ea5541f38adef763c7220ab4a973.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-ea4a7807ab6b6493730b7ec61e39fcedaca26f4f.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-336065925374174b460388f14a3ceee22ff83586.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-4c619c16b87d8e3314ce186763787e4ddaf55ef8.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-3c85d366f4a9c5600240a497d0666dd0a1417ac2.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-d94ee46d0e42a6668f1f96a135416449a9f8b972.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-143ef15beda23396ce6ce5bbeb2d2525c19818d3.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-d74e8e5f1f67e372108171a666a91bfb8fab928c.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-10a41ef35ced9314af124b532b2f8e1a8eb938ed.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-b18516e8ed0a2b71c49cc42ca5a6ac60d7f9bee2.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-c8efe69ddecf6eea6c7324b85a5e979debc1a4b3.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-3447eda697a17be18c7b6add093f357825f334b3.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-69b6ad860f55fd78d0bbd6e3b1d5e72e1962fc6a.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-f3ef16775adb411a77d47df60a0946aa49481d06.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-e32a960510079ff15cfa6d80372e6b959c203e43.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-31d1a4ebe5f23fa147e9af9e8aa1b46d76075cea.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-9c51e4baaf9dbf8472a24d7904d047f6c50ce479.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-67391fc5182d1eac8a779129ba98edd8968b9f79.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-adf77fe31db959cdf89adfd3851a7e070d1b5faf.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/JahyunKim/Desktop/Mapia/app/build/intermediates/pre-dexed/debug/classes-091168e4b83fc56719ca421248ebfe5d0e097972.jar" />
+    </item>
+    <item
+        jar="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/JahyunKim/Desktop/PIXELS/app/build/intermediates/pre-dexed/debug/classes-dfc80d339e0e716804bf03d1f1af6861d6f8b8b7.jar" />
+    </item>
+
+</items>

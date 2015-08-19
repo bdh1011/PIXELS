@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+        <Button
+            android:id="@+id/btn_alert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="알람"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_news_feed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="뉴스피드"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_my_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="내 지도"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_group_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="그룹 지도"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btn_add_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="글쓰기"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
