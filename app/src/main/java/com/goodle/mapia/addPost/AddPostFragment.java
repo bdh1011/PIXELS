@@ -7,12 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.goodle.mapia.R;
-import com.goodle.mapia.addPost.picker.LocationPicker;
 import com.goodle.mapia.home.HomeActivity;
 import com.google.android.gms.maps.model.LatLng;
 
@@ -27,7 +26,7 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_add_post, container, false);
         Toast.makeText(getActivity(), "AddPostFragment", Toast.LENGTH_SHORT).show();
-        Button btn_place_picker = (Button)v.findViewById(R.id.btn_place_picker);
+        LinearLayout btn_place_picker = (LinearLayout)v.findViewById(R.id.btn_place_picker);
         btn_place_picker.setOnClickListener(this);
         txt_center_loc = (TextView)v.findViewById(R.id.txt_center_loc);
         txt_rect_size = (TextView)v.findViewById(R.id.txt_rect_size);
@@ -55,7 +54,7 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_place_picker:
-                Intent intent = new Intent(this.getActivity(), LocationPicker.class);
+                Intent intent = new Intent(this.getActivity(), LocationPickerActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putParcelable("current_location", HomeActivity.getCurrentLocation());
                 bundle.putFloat("current_zoom",16);

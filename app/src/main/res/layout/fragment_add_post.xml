@@ -1,25 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
-        android:id="@+id/btn_place_picker"
+<com.goodle.mapia.custom.InterceptTouchViewGroup android:id="@+id/root" android:background="#ffffffff" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:background="#EFEFEF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.9">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/common_title_height">
+            <ImageView android:id="@+id/btnPostCancel" android:background="@drawable/common_prev" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.goodle.mapia.custom.FontSettableTextView android:textSize="16.0sp" android:textColor="#ff252525" android:gravity="center_vertical" android:id="@+id/txtCenter" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/post" android:layout_centerInParent="true" song:customFont="NanumRegular"
+                xmlns:song="http://schemas.android.com/apk/res-auto" />
+            <RelativeLayout android:id="@+id/btnPostSubmit" android:layout_width="55.0dip" android:layout_height="46.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.goodle.mapia.custom.FontSettableTextView android:textSize="16.0sp" android:textColor="#56c6c9" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:text="@string/complete" android:singleLine="true" android:layout_centerInParent="true" song:customFont="NanumRegular"
+                    xmlns:song="http://schemas.android.com/apk/res-auto" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/btnRight1" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/right1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llPostLocation"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="Loc_X / Loc_Y"/>
-    <TextView
-        android:id="@+id/txt_center_loc"
+        android:layout_marginTop="53dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff56c6c9"
+            android:layout_weight="3"
+            android:id="@+id/btn_place_picker">
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_post_location"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="장소"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:autoText="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/txt_center_loc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="이화여자대학교 학관"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/txt_rect_size"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="이화여자대학교 학관"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.goodle.mapia.custom.HighlightEditText android:textSize="14.0sp" android:textColor="#ff252525" android:textColorHint="#ffdcdcdc" android:gravity="start" android:id="@+id/edit_post" android:background="#ffffffff" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="93dp" android:hint="@string/post_edittext_hint" android:maxLength="500" android:inputType="textMultiLine|textNoSuggestions" android:privateImeOptions="inputType=PredictionOff" android:textCursorDrawable="@null" />
+    <RelativeLayout
+
+        android:layout_alignLeft="@+id/edit_post"
+        android:layout_alignRight="@+id/edit_post"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/edit_post"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="Width / Height"/>
-    <TextView
-        android:id="@+id/txt_rect_size"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view_holder"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottomBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:baselineAligned="true"
+        android:focusable="true">
+        <RelativeLayout android:id="@+id/gpsLayer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <ImageView android:id="@+id/icoGps" android:background="@drawable/post_gps" android:layout_width="9.0dip" android:layout_height="12.0dip" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.goodle.mapia.custom.FontSettableTextView android:textSize="13.0dip" android:textColor="#ff919191" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/location" android:background="#ffffffff" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_toRightOf="@+id/icoGps" android:layout_centerVertical="true" song:customFont="NanumRegular"
+                xmlns:song="http://schemas.android.com/apk/res-auto" />
+            <ImageView android:id="@+id/removeLoc" android:background="@drawable/post_del_gps" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:alpha="0.08" />
+        <RelativeLayout android:id="@+id/recommendedTagLayer" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="41.0dip">
+            <HorizontalScrollView android:background="#ffffffff" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:overScrollMode="never">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/recommendedTagHolder" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.goodle.mapia.custom.FontSettableTextView android:textSize="12.0dip" android:textColor="#ff919191" android:gravity="center" android:id="@+id/txtRecommendedTag" android:paddingLeft="12.5dip" android:paddingRight="12.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/recommended_tag" song:customFont="NanumRegular"
+                        xmlns:song="http://schemas.android.com/apk/res-auto" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/utility_bar" android:background="#efefef" android:layout_width="fill_parent" android:layout_height="50.0dip"
+            android:layout_gravity="bottom">
+            <ImageView android:id="@+id/util_divider" android:background="#ffffffff" android:layout_width="1.5dip" android:layout_height="fill_parent"
+                android:alpha="0.1" />
+            <ImageButton android:id="@+id/btnPostPhoto" android:background="@drawable/selector_post_photo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5dip" android:layout_marginRight="0dp" android:layout_centerVertical="true" android:layout_toRightOf="@+id/util_divider"/>
+            <ImageView android:id="@+id/util_divider0" android:background="#ffffffff" android:layout_width="1.5dip" android:layout_height="fill_parent" android:layout_toRightOf="@+id/btnPostPhoto" android:alpha="0.1" />
+            <ImageButton android:id="@+id/btnPostTag" android:background="@drawable/selector_post_tag" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_centerVertical="true" android:layout_toRightOf="@+id/util_divider0" />
+            <ImageView android:id="@+id/util_divider1" android:background="#ffffffff" android:layout_width="1.5dip" android:layout_height="fill_parent" android:layout_toRightOf="@+id/btnPostTag" android:alpha="0.1" />
+            <ImageView android:id="@+id/btnPostAuth" android:background="@drawable/post_public" android:clickable="true" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_toRightOf="@+id/util_divider1" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/util_divider2" android:background="#ffffffff" android:layout_width="1.5dip" android:layout_height="fill_parent" android:layout_toRightOf="@+id/btnPostAuth" android:alpha="0.1" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.goodle.mapia.custom.InterceptTouchViewGroup>

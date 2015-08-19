@@ -3,4 +3,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_location_picker">LocationPicker</string>
+    <string name="post">글쓰기</string>
+    <string name="post_cancel">취소</string>
+    <string name="post_complete">등록 완료하였습니다</string>
+    <string name="complete">게시</string>
+    <string name="confirm">확인</string>
+    <string name="recommended_tag">추천태그</string>
+    <string name="post_edittext_hint">장소에 대해 이야기를 나눠보세요.</string>
 </resources>

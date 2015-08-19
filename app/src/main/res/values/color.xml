@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="point_color">#ff474cfa</color>
+    <color name="point_color_post">#ff384cd8</color>
+    <color name="point_color_post_mention">#ff384cd8</color>
+    <color name="point_color_post_text">#ff252525</color>
+</resources>
