@@ -14,6 +14,10 @@ import android.widget.Toast;
 import com.goodle.mapia.R;
 import com.goodle.mapia.home.HomeActivity;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.PolygonOptions;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by JahyunKim on 15. 8. 16..
@@ -43,11 +47,24 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
                 int color = bundle.getInt("color");
                 Toast.makeText(this.getActivity(), "location pick success", Toast.LENGTH_LONG).show();
                 txt_center_loc.setText(location.latitude + "/" + location.longitude + "/" + zoom);
-                txt_rect_size.setText(color+"");
+                txt_rect_size.setText(color + "");
 
-
+                double len = 315/Math.pow(2,zoom+5);
+                PolygonOptions options = new PolygonOptions();
+                options.addAll(createRectangle(new LatLng(location.latitude, location.longitude),len,len));
+                options.fillColor(color);
+                options.strokeWidth(0);
+                HomeActivity.addMyBlocks(options);
             }
         }
+    }
+
+    private List<LatLng> createRectangle (LatLng center, Double halfWidth, Double halfHeight) {
+        return Arrays.asList(new LatLng(center.latitude - halfHeight, center.longitude - halfWidth),
+                new LatLng (center.latitude - halfHeight, center.longitude + halfWidth),
+                new LatLng (center.latitude + halfHeight, center.longitude + halfWidth),
+                new LatLng (center.latitude + halfHeight, center.longitude - halfWidth),
+                new LatLng (center.latitude - halfHeight, center.longitude - halfWidth));
     }
 
     @Override

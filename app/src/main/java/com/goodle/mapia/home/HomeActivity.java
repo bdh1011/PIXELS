@@ -18,10 +18,14 @@ import com.goodle.mapia.myMap.MyMapFragment;
 import com.goodle.mapia.newsFeed.NewsFeedFragment;
 import com.goodle.mapia.R;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.PolygonOptions;
+
+import java.util.ArrayList;
 
 
 public class HomeActivity extends FragmentActivity implements View.OnClickListener, LocationListener{
 
+    static ArrayList<PolygonOptions> myBlocks = new ArrayList<PolygonOptions>();
     LocationManager locationManager;
     static LatLng current_location;
     int currentFragmentIndex = 0;
@@ -113,6 +117,12 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
 
     public static LatLng getCurrentLocation(){
         return current_location;
+    }
+
+    public static ArrayList<PolygonOptions> getMyBlocks(){ return myBlocks;}
+
+    public static void addMyBlocks(PolygonOptions po){
+        myBlocks.add(po);
     }
     @Override
     public void onLocationChanged(Location location) {
