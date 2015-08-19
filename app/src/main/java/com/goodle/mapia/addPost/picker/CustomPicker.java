@@ -1,4 +1,4 @@
-package com.goodle.mapia.addPost;
+package com.goodle.mapia.addPost.picker;
 
 import com.google.android.gms.location.places.ui.PlacePicker;
 

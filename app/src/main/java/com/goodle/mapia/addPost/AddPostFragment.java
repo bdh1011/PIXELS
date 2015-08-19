@@ -1,7 +1,6 @@
 package com.goodle.mapia.addPost;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,11 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.goodle.mapia.R;
+import com.goodle.mapia.addPost.picker.LocationPicker;
 import com.goodle.mapia.home.HomeActivity;
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.common.GooglePlayServicesRepairableException;
-import com.google.android.gms.location.places.Place;
-import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.android.gms.maps.model.LatLng;
 
 /**
@@ -44,9 +40,13 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
             if(resultCode==Activity.RESULT_OK){
                 Bundle bundle = data.getParcelableExtra("bundle");
                 LatLng location = bundle.getParcelable("location");
+                float zoom = bundle.getFloat("zoom");
+                int color = bundle.getInt("color");
                 Toast.makeText(this.getActivity(), "location pick success", Toast.LENGTH_LONG).show();
-                txt_center_loc.setText(location.latitude + "/" + location.longitude);
-                txt_rect_size.setText("");
+                txt_center_loc.setText(location.latitude + "/" + location.longitude + "/" + zoom);
+                txt_rect_size.setText(color+"");
+
+
             }
         }
     }

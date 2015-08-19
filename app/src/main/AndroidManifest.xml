@@ -37,7 +37,7 @@
             android:value="AIzaSyCd5TXs2zLkNR3P2F07P2dFNhTFE3i_A8g" />
 
         <activity
-            android:name=".addPost.LocationPicker"
+            android:name=".addPost.picker.LocationPicker"
             android:label="@string/title_activity_location_picker" >
         </activity>
     </application>
