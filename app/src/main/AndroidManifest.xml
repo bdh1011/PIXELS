@@ -40,6 +40,10 @@
             android:name=".addPost.picker.LocationPicker"
             android:label="@string/title_activity_location_picker" >
         </activity>
+        <activity
+            android:name=".addPost.LocationPickerActivity"
+            android:label="@string/title_activity_location_picker" >
+        </activity>
     </application>
 
 </manifest>

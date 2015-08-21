@@ -2,102 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.3.6/cf8bacbf0d476c7f2221f861269365b66447f7ec/httpmime-4.3.6.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="cf8bacbf0d476c7f2221f861269365b66447f7ec">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/httpmime-4.3.6-0a2704ae0c96b76322f1cfd79c4b1dc8faa6e1d5.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-c8fdc1a565d5ec028e1292faddf5b20758c5d3f2.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-6defc1a8a3f60ceb38ecf0fa58459d47173452b7.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-f7b62f04013efff776ab32c9a9be3d3fe6fc5fbd.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-411e9eb188aea5f5e557d4a37a35698900d5da63.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-b72e9dae620fe3781e4dfc0771fa8ca80b7bf0c1.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-a817572cf8a568100ea46b4f9d99409c27876219.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-db6fcac0711abf60a7063b427889838502343f1d.jar" />
-    </item>
-    <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-3d8af29a1a00a6091d90d1282596b56aabb12252.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-be40334f93fe6ac6d08610c6ae0ad889b8c2d35a.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-1e97a8a1d6043b27f09496111b4bb1d0dbd61326.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-5c64f7855a64d21655998506241cba66814b9b6e.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library/1.0.18/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e511fd4a63e102128b47852e7128e94ba5e9021">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-5c2056667bcfa5feab4ff85312cf085d83dd18a1.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.1/f5aa318bda4c6c8d688c9d00b90681dcd82ce636/httpcore-4.4.1.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/httpcore-4.4.1-ee66eca371a1cd60296e44b90d4c044fc305e8c4.jar" />
     </item>
     <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/jars/classes.jar"
@@ -107,18 +16,18 @@
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-630c71ab1d0b1702222366622b8f3086f42a91de.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="565a01f90f1529f73362707c4c185d0623a68782">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-0469fa93d53371b05717af12ef90eb0d673ccb26.jar" />
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-464ffc0ea9eb5f83121826cd14c79d630ffd0a8e.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-0bb7af43f98b23b71a144f3726e9a4f28d09a870.jar" />
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-1e97a8a1d6043b27f09496111b4bb1d0dbd61326.jar" />
     </item>
     <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/jars/classes.jar"
@@ -128,11 +37,81 @@
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-874bca96a5dfc9dcb516543274b4c9268c712d2c.jar" />
     </item>
     <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-be40334f93fe6ac6d08610c6ae0ad889b8c2d35a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-db6fcac0711abf60a7063b427889838502343f1d.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.1/f5aa318bda4c6c8d688c9d00b90681dcd82ce636/httpcore-4.4.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/httpcore-4.4.1-ee66eca371a1cd60296e44b90d4c044fc305e8c4.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.3.6/cf8bacbf0d476c7f2221f861269365b66447f7ec/httpmime-4.3.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cf8bacbf0d476c7f2221f861269365b66447f7ec">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/httpmime-4.3.6-0a2704ae0c96b76322f1cfd79c4b1dc8faa6e1d5.jar" />
+    </item>
+    <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-20b2ace52a0804d7c5f0ad69db00c1161f0ed57a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-f7b62f04013efff776ab32c9a9be3d3fe6fc5fbd.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-b72e9dae620fe3781e4dfc0771fa8ca80b7bf0c1.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library/1.0.18/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e511fd4a63e102128b47852e7128e94ba5e9021">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-5c2056667bcfa5feab4ff85312cf085d83dd18a1.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-411e9eb188aea5f5e557d4a37a35698900d5da63.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-6defc1a8a3f60ceb38ecf0fa58459d47173452b7.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-c8fdc1a565d5ec028e1292faddf5b20758c5d3f2.jar" />
     </item>
     <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/jars/classes.jar"
@@ -142,11 +121,18 @@
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-d2877f08efebf746fe235dd5f235631294334f69.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-6750a870112f280254d8772171fb63433997817d.jar" />
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-5c64f7855a64d21655998506241cba66814b9b6e.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-5ed8b7989915ddccd3559322bed690608299101b.jar" />
     </item>
     <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/jars/classes.jar"
@@ -156,18 +142,11 @@
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-36c05f35bd7378f8f4ea46d3c2474a101846834d.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-64491a1ebab7289963f812ad8aa6555edc894ff8.jar" />
-    </item>
-    <item
-        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="90a3822c38ec8c996e84c16a3477ef632cbc87a3">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/commons-lang3-3.3.2-51273833d384947a14d450871e1d79a07f8a2a78.jar" />
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-e4aff722f5d177cf412cd59be8cac247a65b5dda.jar" />
     </item>
     <item
         jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/jars/classes.jar"
@@ -177,25 +156,46 @@
         <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-4fa99342a3ab8350c52ee8735587ebc6cbd4f8be.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-e4aff722f5d177cf412cd59be8cac247a65b5dda.jar" />
+        sha1="90a3822c38ec8c996e84c16a3477ef632cbc87a3">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/commons-lang3-3.3.2-51273833d384947a14d450871e1d79a07f8a2a78.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-464ffc0ea9eb5f83121826cd14c79d630ffd0a8e.jar" />
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-64491a1ebab7289963f812ad8aa6555edc894ff8.jar" />
     </item>
     <item
-        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/jars/classes.jar"
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
-        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-5ed8b7989915ddccd3559322bed690608299101b.jar" />
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-0bb7af43f98b23b71a144f3726e9a4f28d09a870.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-6750a870112f280254d8772171fb63433997817d.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-a817572cf8a568100ea46b4f9d99409c27876219.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/daehyun/GitHub/PIXELS/app/build/intermediates/pre-dexed/debug/classes-0469fa93d53371b05717af12ef90eb0d673ccb26.jar" />
     </item>
 
 </items>

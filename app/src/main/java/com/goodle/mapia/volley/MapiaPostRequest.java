@@ -10,6 +10,7 @@ import com.android.volley.ParseError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.HttpHeaderParser;
+import com.goodle.mapia.custom.CommonConstants;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,7 +26,7 @@ public class MapiaPostRequest extends Request<JSONObject>
     private Map<String, String> mParam;
 
     public MapiaPostRequest(final String s, final Map<String, String> mParam, final Response.Listener<JSONObject> mListener, final Response.ErrorListener errorListener) {
-        super(1, s, errorListener);
+        super(1, CommonConstants.SERVER_BASE_URL+s, errorListener);
         this.mListener = mListener;
         this.mParam = mParam;
     }

@@ -9,6 +9,7 @@ import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyLog;
+import com.goodle.mapia.custom.CommonConstants;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
@@ -32,18 +33,19 @@ public class MapiaMultipartRequest extends Request<String>
     private Response.Listener mListener;
 
     public MapiaMultipartRequest(final String s, final File file, final Map<String, String> map, final Response.Listener<String> mListener, final Response.ErrorListener errorListener) {
-        super(1, s, errorListener);
+        super(1, CommonConstants.SERVER_BASE_URL+ s, errorListener);
         this.mListener = mListener;
-//        this.mHttpEntity = this.buildMultipartEntity(file, map);
+        this.mHttpEntity = this.buildMultipartEntity(file, map);
         this.mFileParamName = null;
     }
 
     public MapiaMultipartRequest(final String s, final String mFileParamName, final File file, final Map<String, String> map, final Response.Listener<String> mListener, final Response.ErrorListener errorListener) {
-        super(1, s, errorListener);
+        super(1,CommonConstants.SERVER_BASE_URL+ s, errorListener);
         this.mListener = mListener;
         this.mFileParamName = mFileParamName;
         this.mHttpEntity = this.buildMultipartEntity(file, map);
     }
+
 
     private HttpEntity buildMultipartEntity(final File file, final Map<String, String> map) {
         final MultipartEntityBuilder create = MultipartEntityBuilder.create();

@@ -1,6 +1,7 @@
 package com.goodle.mapia.home;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -27,13 +28,19 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
 
     static ArrayList<PolygonOptions> myBlocks = new ArrayList<PolygonOptions>();
     LocationManager locationManager;
-    static LatLng current_location;
-    int currentFragmentIndex = 0;
+    public static LatLng currentLatlng = new LatLng(37.498360, 127.027400);
+    public static LatLng cameraLatlng = new LatLng(37.498360, 127.027400);
+    public static float cameraZoom = 8;
+
+
+    int currentFragmentIndex = 3;
     public final static int FragmentAddPost = 0;
     public final static int FragmentAlert = 1;
     public final static int FragmentGroupMap = 2;
     public final static int FragmentMyMap = 3;
+
     public final static int FragmentNewsFeed = 4;
+    public Fragment currentFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,42 +58,46 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
         Button btn_news_feed = (Button)findViewById(R.id.btn_news_feed);
         btn_news_feed.setOnClickListener(this);
 
+
+
+        currentLatlng = new LatLng(0,0);
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10000, 50, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 50, this);
+
         fragmentReplace(currentFragmentIndex);
 
-        current_location = new LatLng(0,0);
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
     }
 
     private void fragmentReplace(int newFragmentIndex){
-        Fragment newFragment = getFragment(newFragmentIndex);
+        currentFragment = getFragment(newFragmentIndex);
         final FragmentTransaction transaction = getSupportFragmentManager()
                 .beginTransaction();
-        transaction.replace(R.id.ll_fragment, newFragment);
+        transaction.replace(R.id.ll_fragment, currentFragment);
         transaction.commit();
     }
 
     private Fragment getFragment(int newFragmentIndex){
-        Fragment newFragment = null;
+        currentFragment = null;
         switch(newFragmentIndex){
             case FragmentAddPost:
-                newFragment = new AddPostFragment();
+                currentFragment = new AddPostFragment();
                 break;
             case FragmentAlert:
-                newFragment = new AlertFragment();
+                currentFragment = new AlertFragment();
                 break;
             case FragmentGroupMap:
-                newFragment = new GroupMapFragment();
+                currentFragment = new GroupMapFragment();
                 break;
             case FragmentMyMap:
-                newFragment = new MyMapFragment();
+                currentFragment = new MyMapFragment();
                 break;
             case FragmentNewsFeed:
-                newFragment = new NewsFeedFragment();
+                currentFragment = new NewsFeedFragment();
                 break;
         }
-        return newFragment;
+        return currentFragment;
     }
 
     @Override
@@ -115,8 +126,8 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
         }
     }
 
-    public static LatLng getCurrentLocation(){
-        return current_location;
+    public static LatLng getCurrentLatlng(){
+        return currentLatlng;
     }
 
     public static ArrayList<PolygonOptions> getMyBlocks(){ return myBlocks;}
@@ -124,9 +135,33 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
     public static void addMyBlocks(PolygonOptions po){
         myBlocks.add(po);
     }
+
     @Override
     public void onLocationChanged(Location location) {
-        current_location = new LatLng(location.getLatitude(), location.getLongitude());
+        if (location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
+        //Gps 위치제공자에 의한 위치변화. 오차범위가 좁다.
+            double longitude = location.getLongitude();    //경도
+            double latitude = location.getLatitude();         //위도
+            float accuracy = location.getAccuracy();        //신뢰도
+            currentLatlng = new LatLng(location.getLatitude(), location.getLongitude());
+
+            SharedPreferences prefs = getSharedPreferences("Location", MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+
+            editor.putFloat("latitude", (float)(currentLatlng.latitude));
+            editor.putFloat("longitude", (float)(currentLatlng.longitude));
+            editor.commit();
+
+            if(currentFragmentIndex == 0){
+                ((AddPostFragment)currentFragment).updateLocation(currentLatlng);
+            }
+        }
+        else {
+        //Network 위치제공자에 의한 위치변화
+        //Network 위치는 Gps에 비해 정확도가 많이 떨어진다.
+        }
+
+
     }
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
@@ -137,4 +172,5 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
     @Override
     public void onProviderDisabled(String provider) {
     }
+
 }

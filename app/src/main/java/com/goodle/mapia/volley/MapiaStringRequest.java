@@ -7,6 +7,7 @@ package com.goodle.mapia.volley;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
+import com.goodle.mapia.custom.CommonConstants;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,11 +16,11 @@ import java.util.Map;
 public class MapiaStringRequest extends StringRequest
 {
     public MapiaStringRequest(final int n, final String s, final Response.Listener<String> listener, final Response.ErrorListener errorListener) {
-        super(n, s, listener, errorListener);
+        super(n, CommonConstants.SERVER_BASE_URL+s, listener, errorListener);
     }
 
     public MapiaStringRequest(final String s, final Response.Listener<String> listener, final Response.ErrorListener errorListener) {
-        super(s, listener, errorListener);
+        super(CommonConstants.SERVER_BASE_URL+s, listener, errorListener);
     }
 
     @Override
