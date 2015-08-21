@@ -18,6 +18,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.PolygonOptions;
+
+import java.util.ArrayList;
 
 /**
  * Created by daehyun on 15. 8. 21..
@@ -39,8 +42,15 @@ public class BaseMapFragment extends Fragment implements View.OnClickListener, L
         gMap = supportMapFragment.getMap();
         gMap.animateCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition.Builder().target(currentLatlng).zoom(16).build()));
         gMap.setOnCameraChangeListener(this);
-
+        drawColorBlock();
         return v;
+    }
+
+    private void drawColorBlock(){
+        ArrayList<PolygonOptions> blocks = HomeActivity.getMyBlocks();
+        for(int i=0;i<blocks.size();i++){
+            gMap.addPolygon(blocks.get(i));
+        }
     }
 
 

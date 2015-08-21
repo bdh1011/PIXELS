@@ -3,6 +3,7 @@ package com.goodle.mapia.addPost;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -142,17 +143,21 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
         if(requestCode==REQUEST_LOCATION_PICKER){
             if(resultCode==Activity.RESULT_OK){
                 Bundle bundle = data.getParcelableExtra("bundle");
-                location = bundle.getParcelable("location");
+                LatLng location = bundle.getParcelable("location");
                 float zoom = bundle.getFloat("zoom");
                 int color = bundle.getInt("color");
+                double width = bundle.getDouble("width");
+                double height = bundle.getDouble("height");
                 Toast.makeText(this.getActivity(), "location pick success", Toast.LENGTH_LONG).show();
                 txt_center_loc.setText(location.latitude + "/" + location.longitude + "/" + zoom);
-                txt_rect_size.setText(color + "");
+                txt_rect_size.setText(width + "/" + height);
 
-                double len = 315/Math.pow(2,zoom+5);
                 PolygonOptions options = new PolygonOptions();
-                options.addAll(createRectangle(new LatLng(location.latitude, location.longitude),len,len));
-                options.fillColor(color);
+                options.addAll(createRectangle(new LatLng(location.latitude, location.longitude),width,height));
+
+                float[] hsv = new float[3];
+                Color.colorToHSV(color, hsv);
+                options.fillColor(Color.argb(127, (int)hsv[0], (int)hsv[1], (int)hsv[2]));
                 options.strokeWidth(0);
                 HomeActivity.addMyBlocks(options);
             }
