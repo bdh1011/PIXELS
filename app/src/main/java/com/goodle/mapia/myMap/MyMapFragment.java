@@ -1,5 +1,7 @@
 package com.goodle.mapia.myMap;
 
+import android.app.Activity;
+
 import com.goodle.mapia.common.BaseMapFragment;
 import com.goodle.mapia.home.HomeActivity;
 import com.google.android.gms.maps.model.PolygonOptions;
@@ -22,6 +24,12 @@ public class MyMapFragment extends BaseMapFragment {
 //
 //        return v;
 //    }
+
+
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+    }
 
     private void drawColorBlock(){
         ArrayList<PolygonOptions> blocks = HomeActivity.getMyBlocks();

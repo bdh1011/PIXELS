@@ -1,5 +1,6 @@
 package com.goodle.mapia.groupMap;
 
+import android.app.Activity;
 import android.view.View;
 
 import com.goodle.mapia.common.BaseMapFragment;
@@ -15,4 +16,9 @@ public class GroupMapFragment extends BaseMapFragment {
 //        Toast.makeText(getActivity(), "GroupMapFragment", Toast.LENGTH_SHORT).show();
 //        return v;
 //    }
+
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+    }
 }

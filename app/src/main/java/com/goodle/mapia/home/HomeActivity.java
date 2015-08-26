@@ -1,30 +1,26 @@
 package com.goodle.mapia.home;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.location.Location;
-import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Button;
 
+import com.goodle.mapia.R;
 import com.goodle.mapia.addPost.AddPostFragment;
 import com.goodle.mapia.alert.AlertFragment;
 import com.goodle.mapia.groupMap.GroupMapFragment;
 import com.goodle.mapia.myMap.MyMapFragment;
 import com.goodle.mapia.newsFeed.NewsFeedFragment;
-import com.goodle.mapia.R;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 import java.util.ArrayList;
 
 
-public class HomeActivity extends FragmentActivity implements View.OnClickListener, LocationListener{
+public class HomeActivity extends FragmentActivity implements View.OnClickListener{//}, LocationListener{
 
     static ArrayList<PolygonOptions> myBlocks = new ArrayList<PolygonOptions>();
     LocationManager locationManager;
@@ -42,6 +38,10 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
     public final static int FragmentNewsFeed = 4;
     public Fragment currentFragment;
 
+    public HomeActivity(){
+        super();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,13 +58,6 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
         Button btn_news_feed = (Button)findViewById(R.id.btn_news_feed);
         btn_news_feed.setOnClickListener(this);
 
-
-
-        currentLatlng = new LatLng(0,0);
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10000, 50, this);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 50, this);
 
         fragmentReplace(currentFragmentIndex);
 
@@ -136,41 +129,41 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
         myBlocks.add(po);
     }
 
-    @Override
-    public void onLocationChanged(Location location) {
-        if (location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
-        //Gps 위치제공자에 의한 위치변화. 오차범위가 좁다.
-            double longitude = location.getLongitude();    //경도
-            double latitude = location.getLatitude();         //위도
-            float accuracy = location.getAccuracy();        //신뢰도
-            currentLatlng = new LatLng(location.getLatitude(), location.getLongitude());
-
-            SharedPreferences prefs = getSharedPreferences("Location", MODE_PRIVATE);
-            SharedPreferences.Editor editor = prefs.edit();
-
-            editor.putFloat("latitude", (float)(currentLatlng.latitude));
-            editor.putFloat("longitude", (float)(currentLatlng.longitude));
-            editor.commit();
-
-            if(currentFragmentIndex == 0){
-                ((AddPostFragment)currentFragment).updateLocation(currentLatlng);
-            }
-        }
-        else {
-        //Network 위치제공자에 의한 위치변화
-        //Network 위치는 Gps에 비해 정확도가 많이 떨어진다.
-        }
-
-
-    }
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-    }
-    @Override
-    public void onProviderEnabled(String provider) {
-    }
-    @Override
-    public void onProviderDisabled(String provider) {
-    }
+//    @Override
+//    public void onLocationChanged(Location location) {
+//        if (location.getProvider().equals(LocationManager.GPS_PROVIDER)) {
+//        //Gps 위치제공자에 의한 위치변화. 오차범위가 좁다.
+//            double longitude = location.getLongitude();    //경도
+//            double latitude = location.getLatitude();         //위도
+//            float accuracy = location.getAccuracy();        //신뢰도
+//            currentLatlng = new LatLng(location.getLatitude(), location.getLongitude());
+//
+//            SharedPreferences prefs = getSharedPreferences("Location", MODE_PRIVATE);
+//            SharedPreferences.Editor editor = prefs.edit();
+//
+//            editor.putFloat("latitude", (float)(currentLatlng.latitude));
+//            editor.putFloat("longitude", (float)(currentLatlng.longitude));
+//            editor.commit();
+//
+//            if(currentFragmentIndex == 0){
+//                ((AddPostFragment)currentFragment).updateLocation(currentLatlng);
+//            }
+//        }
+//        else {
+//        //Network 위치제공자에 의한 위치변화
+//        //Network 위치는 Gps에 비해 정확도가 많이 떨어진다.
+//        }
+//
+//
+//    }
+//    @Override
+//    public void onStatusChanged(String provider, int status, Bundle extras) {
+//    }
+//    @Override
+//    public void onProviderEnabled(String provider) {
+//    }
+//    @Override
+//    public void onProviderDisabled(String provider) {
+//    }
 
 }

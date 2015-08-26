@@ -1,5 +1,7 @@
 package com.goodle.mapia.common;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationListener;
@@ -28,11 +30,20 @@ import java.util.ArrayList;
 public class BaseMapFragment extends Fragment implements View.OnClickListener, LocationListener , GoogleMap.OnMapClickListener, GoogleMap.OnCameraChangeListener {
     protected GoogleMap gMap;
     protected LocationManager locationManager;
-
+    protected Activity mActivity;
     protected LatLng currentLatlng =  new LatLng(37.498360, 127.027400);;
     protected boolean cameraMoveWhenCreate = false;
     protected float currentZoom=-1, lastZoom=-1;
 
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+        mActivity = activity;
+        locationManager = (LocationManager) mActivity.getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10000, 50, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 50, this);
+
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_my_map, container, false);
@@ -58,6 +69,7 @@ public class BaseMapFragment extends Fragment implements View.OnClickListener, L
     @Override
     public void onLocationChanged(Location location) {
         HomeActivity.currentLatlng = new LatLng(location.getLatitude(), location.getLongitude());
+
         SharedPreferences prefs = getActivity().getSharedPreferences("Location", getActivity().MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
 
