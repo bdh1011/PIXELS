@@ -19,6 +19,7 @@ public class MapiaRequest extends JsonObjectRequest
 {
     public MapiaRequest(final int n, final String s, final JSONObject jsonObject, final Response.Listener<JSONObject> listener, final Response.ErrorListener errorListener) {
         super(n, CommonConstants.SERVER_BASE_URL + s, jsonObject, listener, errorListener);
+
     }
 
     public MapiaRequest(final String s, final JSONObject jsonObject, final Response.Listener<JSONObject> listener, final Response.ErrorListener errorListener) {

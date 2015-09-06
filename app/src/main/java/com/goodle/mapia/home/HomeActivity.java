@@ -14,6 +14,7 @@ import com.goodle.mapia.alert.AlertFragment;
 import com.goodle.mapia.groupMap.GroupMapFragment;
 import com.goodle.mapia.myMap.MyMapFragment;
 import com.goodle.mapia.newsFeed.NewsFeedFragment;
+import com.goodle.mapia.volley.MapiaVolley;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.PolygonOptions;
 
@@ -37,6 +38,7 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
 
     public final static int FragmentNewsFeed = 4;
     public Fragment currentFragment;
+    public MapiaVolley mapiaVolley;
 
     public HomeActivity(){
         super();
@@ -46,7 +48,8 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        mapiaVolley = new MapiaVolley();
+        mapiaVolley.init(getBaseContext());
         Button btn_add_post = (Button)findViewById(R.id.btn_add_post);
         btn_add_post.setOnClickListener(this);
         Button btn_alert = (Button)findViewById(R.id.btn_alert);

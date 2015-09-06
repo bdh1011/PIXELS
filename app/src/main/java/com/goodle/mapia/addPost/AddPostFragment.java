@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
 import com.goodle.mapia.R;
 import com.goodle.mapia.custom.HighlightEditText;
 import com.goodle.mapia.home.HomeActivity;
@@ -36,10 +37,10 @@ import java.util.List;
  */
 public class AddPostFragment extends Fragment implements View.OnClickListener{
     TextView txt_center_loc, txt_rect_size;
-    private RelativeLayout mBtnUpload;
+    private RelativeLayout mBtnPostSubmit;
     private HighlightEditText mEdtPost;
 
-    private LinearLayout btn_place_picker;
+    private LinearLayout mBtnPlacePicker;
     private View mRootView;
     //private static int LAUNCH_PlacePicker = 1;
     private static int REQUEST_LOCATION_PICKER = 1;
@@ -125,16 +126,18 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
     }
 
     private void initView() {
-        btn_place_picker = (LinearLayout)mRootView.findViewById(R.id.btn_place_picker);
+        mBtnPlacePicker = (LinearLayout)mRootView.findViewById(R.id.btn_place_picker);
 
         txt_center_loc = (TextView)mRootView.findViewById(R.id.txt_center_loc);
         txt_rect_size = (TextView)mRootView.findViewById(R.id.txt_rect_size);
         mEdtPost = (HighlightEditText)mRootView.findViewById(R.id.edit_post);
-        mBtnUpload = (RelativeLayout)mRootView.findViewById(R.id.btnPostSubmit);
+        mBtnPostSubmit = (RelativeLayout)mRootView.findViewById(R.id.btnPostSubmit);
 
     }
     private void setEventListener() {
-        btn_place_picker.setOnClickListener(this);
+
+        mBtnPlacePicker.setOnClickListener(this);
+        mBtnPostSubmit.setOnClickListener(this);
     }
 
     @Override
@@ -190,7 +193,7 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
                 Float lng = prefs.getFloat("longitude", 0.1f);
 
                 final LatLng postLatLng = new LatLng(lat, lng);
-                final String postComment = mEdtPost.getText().toString();
+
                 String mapType = "public";
                 String postContent = mEdtPost.getText().toString();
                 HashMap<String, String> params = new HashMap<String, String>();
@@ -198,11 +201,12 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
                 params.put("postContent", postContent);
                 params.put("postLatLng", postLatLng.toString());
 
-                MapiaRequest mapiaRequest = new MapiaRequest("/post", new JSONObject(params), new Response.Listener<JSONObject>() {
+                MapiaRequest mapiaRequest = new MapiaRequest("post", new JSONObject(params), new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            VolleyLog.v("Response:%n %s", response.toString(4));
+                            Log.v("Response:%n %s", response.toString(4));
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -210,9 +214,12 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        VolleyLog.e("Error: ", error.getMessage());
+                        Log.v("Error: ", error.getMessage()+"hi");
                     }
                 });
+
+                mapiaRequest.setRetryPolicy(new DefaultRetryPolicy(10000, 1, 1.0f));
+                ((HomeActivity)getActivity()).mapiaVolley.getRequestQueue().add(mapiaRequest);
 
         }
     }
