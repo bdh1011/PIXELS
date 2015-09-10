@@ -188,7 +188,7 @@ public class AddPostFragment extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.btnPostSubmit:
-                SharedPreferences prefs = getActivity().getSharedPreferences("Location", getActivity().MODE_PRIVATE);
+                SharedPre5rferences prefs = getActivity().getSharedPreferences("Location", getActivity().MODE_PRIVATE);
                 Float lat = prefs.getFloat("latitude", 0.1f);
                 Float lng = prefs.getFloat("longitude", 0.1f);
 
